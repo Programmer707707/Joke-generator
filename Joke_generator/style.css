@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(243, 200, 58);
+}
+
+.container {
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: black !important;
+  position: absolute;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  top: 20%;
+  left: 25%;
+  text-align: center;
+  border-radius: 20px;
+}
+.emoji {
+  height: 35%;
+  display: block;
+  margin-bottom: 3%;
+}
+.emoji-h2 {
+  margin-top: 4%;
+  font-size: 6rem;
+}
+.emoji-h2:hover {
+  transform: rotate(30deg, -30deg);
+  animation: rotateEmoji 2s linear infinite;
+}
+@keyframes rotateEmoji {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+.joke-text {
+  height: 20%;
+}
+.container .joke-text p {
+  color: white;
+  font-size: 1.1rem;
+  display: grid;
+  place-items: center;
+  height: 70px;
+}
+.container .btn {
+  margin-top: 5%;
+}
+button {
+  background-color: rgb(250, 168, 74);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  background-color: rgb(255, 148, 26);
+}
